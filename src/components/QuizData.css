@@ -1,0 +1,85 @@
+.quiz-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question {
+  width: 80%;
+  border: 2px solid white;
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+  background: linear-gradient(#100241, black);
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.answer {
+  width: 40%;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22074d);
+  padding: 10px;
+  border: 2px solid white;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+
+.answer.correct {
+  animation: correct 4s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 4s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: crimson;
+  }
+}

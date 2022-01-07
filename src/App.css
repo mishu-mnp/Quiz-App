@@ -1,4 +1,78 @@
-body {
-  color: black;
-  background-color: white;
+.app {
+  height: 100%;
+  color: white;
+  background-color: #1e1e5a;
+  display: flex;
+}
+
+.main {
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #1e1e5a),
+    url("./assets/kbc.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  height: 70px;
+  width: 70px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  /* position: absolute;
+  left: 150px;
+  bottom: 15px; */
+}
+
+.bottom {
+  height: 50%;
+}
+
+.pyramid {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+
+.moneyListItemAmount {
+  font-size: 22px;
+  font-weight: 400;
 }
