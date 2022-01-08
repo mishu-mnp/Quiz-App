@@ -22,14 +22,6 @@ const QuizData = ({ setQuestionNumber, questionNumber, setStop }) => {
         }, 3000)
     }, [letsPlay])
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         letsPlay()
-    //     }, 3000)
-    // }, [letsPlay, question])
-
-
-
     useEffect(() => {
         setQuestion(data[questionNumber - 1])
     }, [questionNumber])

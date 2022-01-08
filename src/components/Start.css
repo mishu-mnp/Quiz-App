@@ -1,0 +1,32 @@
+.start {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  justify-content: center;
+}
+
+.userInput {
+  width: 50%;
+  height: 1.6rem;
+  padding: 0.9rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.startBtn {
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 25%;
+  font-weight: 600;
+}
