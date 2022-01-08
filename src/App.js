@@ -5,6 +5,7 @@ import QuizData from './components/QuizData';
 function App() {
 
   const [questionNumber, setQuestionNumber] = useState(1)
+  const [stop, setStop] = useState(false)
 
   const amountPyramid = [
     { id: 1, amount: '$ 100' },
@@ -31,7 +32,7 @@ function App() {
           <div className="timer">30</div>
         </div>
         <div className="bottom">
-          <QuizData />
+          <QuizData setStop={setStop} questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
         </div>
       </div>
       <div className="pyramid">

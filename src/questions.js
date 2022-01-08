@@ -21,7 +21,7 @@ const data = [
             }
         ]
     }, {
-        id: 1,
+        id: 2,
         question: 'When was ReactJs created?',
         answers: [
             {
@@ -42,7 +42,7 @@ const data = [
             }
         ]
     }, {
-        id: 1,
+        id: 3,
         question: 'When was C++ created?',
         answers: [
             {
@@ -63,7 +63,7 @@ const data = [
             }
         ]
     }, {
-        id: 1,
+        id: 4,
         question: 'C Language is Created by which Legend?',
         answers: [
             {
@@ -84,7 +84,7 @@ const data = [
             }
         ]
     }, {
-        id: 1,
+        id: 5,
         question: 'HTML is ?',
         answers: [
             {
@@ -101,8 +101,10 @@ const data = [
             },
             {
                 text: 'Markup Language',
-                correct: false
+                correct: true
             }
         ]
     }
 ]
+
+export default data
