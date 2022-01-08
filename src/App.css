@@ -16,6 +16,25 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.main h1 {
+  width: 50%;
+  border: 2px solid white;
+  padding: 12px;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+  background: linear-gradient(#100241, black);
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 
 .top {

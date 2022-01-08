@@ -22,10 +22,6 @@ const QuizData = ({ setQuestionNumber, questionNumber, setStop }) => {
     const handleAnswer = (a) => {
         setSelectedAnswer(a)
         setClassName("answer active")
-        // setTimeout(() => {
-        //     setClassName(a.correct ? 'answer correct' : 'answer wrong')
-        // }, 3000)
-
         delay(3000, () => {
             setClassName(a.correct ? 'answer correct' : 'answer wrong')
         })
@@ -37,9 +33,6 @@ const QuizData = ({ setQuestionNumber, questionNumber, setStop }) => {
                 setStop(true)
             }
         })
-        // setTimeout(() => {
-        //     setQuestionNumber(a.correct ? questionNumber + 1 : questionNumber)
-        // }, [6000])
     }
 
     return (
@@ -47,7 +40,7 @@ const QuizData = ({ setQuestionNumber, questionNumber, setStop }) => {
             <div className="question">{question?.question}</div>
             <div className="answers">
                 {question?.answers.map((a) => (
-                    <div className={selectedAnswer === a ? classname : 'answer'} onClick={() => handleAnswer(a)} >{a.text}</div>
+                    <div key={a.text} className={selectedAnswer === a ? classname : 'answer'} onClick={() => handleAnswer(a)} >{a.text}</div>
                 ))}
             </div>
         </div>
