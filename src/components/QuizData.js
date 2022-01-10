@@ -19,7 +19,7 @@ const QuizData = ({ setQuestionNumber, questionNumber, setStop }) => {
     useEffect(() => {
         setTimeout(() => {
             letsPlay()
-        }, 3000)
+        }, 1000)
     }, [letsPlay])
 
     useEffect(() => {
